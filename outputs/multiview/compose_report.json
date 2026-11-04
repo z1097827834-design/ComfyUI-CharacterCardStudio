@@ -1,4 +1,83 @@
 {
+  "school_ref": {
+    "mode": "role-aware-unique-assets",
+    "template": "school_ref",
+    "fitMode": "完整显示",
+    "expressionPanels": 6,
+    "detailPanels": 9,
+    "mapping": [
+      {
+        "target": 1,
+        "role": "hero",
+        "label": "主立绘",
+        "source": "hero_action",
+        "fit": "contain"
+      },
+      {
+        "target": 2,
+        "role": "turnaround",
+        "label": "正面全身",
+        "source": "full_front",
+        "fit": "contain"
+      },
+      {
+        "target": 3,
+        "role": "turnaround",
+        "label": "侧面全身",
+        "source": "full_profile",
+        "fit": "contain"
+      },
+      {
+        "target": 4,
+        "role": "turnaround",
+        "label": "背面全身",
+        "source": "full_back",
+        "fit": "contain"
+      },
+      {
+        "target": 5,
+        "role": "expression",
+        "label": "甜美微笑",
+        "source": "expression_2",
+        "fit": "contain"
+      },
+      {
+        "target": 6,
+        "role": "expression",
+        "label": "低头沉思",
+        "source": "expression_6",
+        "fit": "contain"
+      },
+      {
+        "target": 7,
+        "role": "expression",
+        "label": "惊讶张嘴",
+        "source": "expression_5",
+        "fit": "contain"
+      },
+      {
+        "target": 8,
+        "role": "detail",
+        "label": "服装细节",
+        "source": "detail_3",
+        "fit": "contain"
+      },
+      {
+        "target": 9,
+        "role": "detail",
+        "label": "配饰细节",
+        "source": "detail_6",
+        "fit": "contain"
+      },
+      {
+        "target": 10,
+        "role": "detail",
+        "label": "鞋履细节",
+        "source": "detail_5",
+        "fit": "contain"
+      }
+    ]
+  },
   "head_body_6": {
     "mode": "role-aware-unique-assets",
     "template": "head_body_6",
@@ -17,7 +96,7 @@
         "target": 2,
         "role": "portrait",
         "label": "侧面头像",
-        "source": "full_profile_head_crop_mirrored",
+        "source": "full_profile_head_crop",
         "fit": "contain"
       },
       {

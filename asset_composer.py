@@ -97,7 +97,8 @@ def _portrait_for_cell(
     text = f"{cell.get('id', '')} {cell.get('label', '')} {cell.get('prompt', '')}".lower()
     if _contains_any(text, ("back", "后脑", "背面")):
         return _head_crop(full_back), "full_back_head_crop"
-    if _contains_any(text, ("right", "右侧")):
+    # 只有真正的右侧面才镜像：“人物朝画面右侧”讲的是朝向，不是右侧面，别被“右侧”两个字误伤
+    if "body_right" in text or _contains_any(text, ("朝左", "右半边脸", "右耳")):
         return ImageOps.mirror(_head_crop(full_profile)), "full_profile_head_crop_mirrored"
     # 四分之三要先判：它的提示词常带“斜侧/侧脸”，否则会被下面的侧面规则抢走
     if _contains_any(text, ("three_quarter", "斜侧", "四分之三", "三分之四")):
