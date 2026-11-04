@@ -1,4 +1,111 @@
 {
+  "xianxia_ref": {
+    "mode": "role-aware-unique-assets",
+    "template": "xianxia_ref",
+    "fitMode": "完整显示",
+    "expressionPanels": 6,
+    "detailPanels": 9,
+    "mapping": [
+      {
+        "target": 1,
+        "role": "turnaround",
+        "label": "正面全身",
+        "source": "full_front",
+        "fit": "contain"
+      },
+      {
+        "target": 2,
+        "role": "turnaround",
+        "label": "右侧面全身",
+        "source": "full_profile_mirrored",
+        "fit": "contain"
+      },
+      {
+        "target": 3,
+        "role": "turnaround",
+        "label": "背面全身",
+        "source": "full_back",
+        "fit": "contain"
+      },
+      {
+        "target": 4,
+        "role": "turnaround",
+        "label": "左侧面全身",
+        "source": "full_profile",
+        "fit": "contain"
+      },
+      {
+        "target": 5,
+        "role": "portrait",
+        "label": "正面头像",
+        "source": "headshot",
+        "fit": "contain"
+      },
+      {
+        "target": 6,
+        "role": "portrait",
+        "label": "侧面头像",
+        "source": "full_profile_head_crop",
+        "fit": "contain"
+      },
+      {
+        "target": 7,
+        "role": "portrait",
+        "label": "斜侧头像",
+        "source": "action_head_crop",
+        "fit": "contain"
+      },
+      {
+        "target": 8,
+        "role": "expression",
+        "label": "温柔微笑",
+        "source": "expression_2",
+        "fit": "contain"
+      },
+      {
+        "target": 9,
+        "role": "expression",
+        "label": "惊讶张嘴",
+        "source": "expression_5",
+        "fit": "contain"
+      },
+      {
+        "target": 10,
+        "role": "expression",
+        "label": "闭眼沉思",
+        "source": "expression_6",
+        "fit": "contain"
+      },
+      {
+        "target": 11,
+        "role": "expression",
+        "label": "蹙眉清冷",
+        "source": "expression_3",
+        "fit": "contain"
+      },
+      {
+        "target": 12,
+        "role": "detail",
+        "label": "眼部细节",
+        "source": "detail_1",
+        "fit": "contain"
+      },
+      {
+        "target": 13,
+        "role": "detail",
+        "label": "配饰细节",
+        "source": "detail_6",
+        "fit": "contain"
+      },
+      {
+        "target": 14,
+        "role": "detail",
+        "label": "面料细节",
+        "source": "detail_3",
+        "fit": "contain"
+      }
+    ]
+  },
   "school_ref": {
     "mode": "role-aware-unique-assets",
     "template": "school_ref",
