@@ -1,0 +1,97 @@
+{
+  "head_body_6": {
+    "mode": "role-aware-unique-assets",
+    "template": "head_body_6",
+    "fitMode": "完整显示",
+    "expressionPanels": 6,
+    "detailPanels": 9,
+    "mapping": [
+      {
+        "target": 1,
+        "role": "portrait",
+        "label": "正面头像",
+        "source": "headshot",
+        "fit": "contain"
+      },
+      {
+        "target": 2,
+        "role": "portrait",
+        "label": "侧面头像",
+        "source": "full_profile_head_crop_mirrored",
+        "fit": "contain"
+      },
+      {
+        "target": 3,
+        "role": "portrait",
+        "label": "后脑头像",
+        "source": "full_back_head_crop",
+        "fit": "contain"
+      },
+      {
+        "target": 4,
+        "role": "turnaround",
+        "label": "正面全身",
+        "source": "full_front",
+        "fit": "contain"
+      },
+      {
+        "target": 5,
+        "role": "turnaround",
+        "label": "侧面全身",
+        "source": "full_profile",
+        "fit": "contain"
+      },
+      {
+        "target": 6,
+        "role": "turnaround",
+        "label": "背面全身",
+        "source": "full_back",
+        "fit": "contain"
+      }
+    ]
+  },
+  "fiveref": {
+    "mode": "role-aware-unique-assets",
+    "template": "fiveref",
+    "fitMode": "完整显示",
+    "expressionPanels": 6,
+    "detailPanels": 9,
+    "mapping": [
+      {
+        "target": 1,
+        "role": "portrait",
+        "label": "正面头像",
+        "source": "headshot",
+        "fit": "contain"
+      },
+      {
+        "target": 2,
+        "role": "portrait",
+        "label": "四分之三头像",
+        "source": "action_head_crop",
+        "fit": "contain"
+      },
+      {
+        "target": 3,
+        "role": "turnaround",
+        "label": "正面全身",
+        "source": "full_front",
+        "fit": "contain"
+      },
+      {
+        "target": 4,
+        "role": "turnaround",
+        "label": "侧面全身",
+        "source": "full_profile",
+        "fit": "contain"
+      },
+      {
+        "target": 5,
+        "role": "turnaround",
+        "label": "背面全身",
+        "source": "full_back",
+        "fit": "contain"
+      }
+    ]
+  }
+}

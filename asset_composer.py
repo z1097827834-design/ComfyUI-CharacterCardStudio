@@ -99,10 +99,11 @@ def _portrait_for_cell(
         return _head_crop(full_back), "full_back_head_crop"
     if _contains_any(text, ("right", "右侧")):
         return ImageOps.mirror(_head_crop(full_profile)), "full_profile_head_crop_mirrored"
-    if _contains_any(text, ("side", "profile", "侧脸", "侧面")):
-        return _head_crop(full_profile), "full_profile_head_crop"
+    # 四分之三要先判：它的提示词常带“斜侧/侧脸”，否则会被下面的侧面规则抢走
     if _contains_any(text, ("three_quarter", "斜侧", "四分之三", "三分之四")):
         return _head_crop(action_a), "action_head_crop"
+    if _contains_any(text, ("side", "profile", "侧脸", "侧面")):
+        return _head_crop(full_profile), "full_profile_head_crop"
     if text.strip() and "正面" in text:
         return headshot, "headshot"
     if portraits:
